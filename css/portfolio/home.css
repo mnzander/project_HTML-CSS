@@ -1,0 +1,241 @@
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    height: 89vh;
+
+    .contenido {
+        max-width: 600px; /* Máximo ancho que ocupa la caja */
+
+        h1{
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--blanco);
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--oscuro);
+                animation: showRight 1s ease forwards;
+                animation-delay: 1s;
+            }
+        }
+
+        h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--turquesa);
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--oscuro);
+                animation: showRight 1s ease forwards;
+                animation-delay: 1.5s;
+            }
+        }
+
+        p{
+            font-size: 16px;
+            position: relative;
+            color: var(--blanco);
+            margin: 20px 0 40px;
+            text-align:justify;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--oscuro);
+                animation: showRight 1.5s ease forwards;
+                animation-delay: 2s;
+            }
+        }
+
+        .botones{
+            display: flex;
+            gap: 25px;
+            width: 345px;
+            height: 50px;
+            position: relative; 
+            
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--oscuro);
+                animation: showRight 1s ease forwards;
+                animation-delay: 2.5s;
+                z-index: 2;
+            }
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 100%;
+                background: var(--turquesa);
+                border: 2px solid var(--turquesa);
+                border-radius: 40px;
+                font-size: 19px;
+                color: var(--oscuro);
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 1px;
+                overflow: hidden;
+                z-index:1;
+                position: relative;
+
+                &:hover{
+                    color: var(--turquesa)
+                }
+
+            }
+
+            a:nth-child(2) {
+                background: transparent;
+                color:var(--turquesa);
+
+                &:hover{
+                    color: var(--oscuro);
+                }
+
+                &:hover::before{
+                    background: var(--turquesa);
+                }
+            }
+
+            a::before{
+                content:'';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background: var(--oscuro);
+                z-index: -1;
+                transition: .5s;
+            }
+
+            a:hover::before {
+                width: 100%;
+            }
+        }
+
+        .iconos{
+            display:flex;
+            gap: 25px;
+            margin-top: 85px;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--oscuro);
+                animation: showRight 1.5s ease forwards;
+                animation-delay: 3s;
+            }
+
+            a{
+                display: flex;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                text-decoration: none;
+
+                svg{
+                    height: 30px;
+                    width: 30px;
+
+                    &:hover{
+                        height: 35px;
+                        width: 35px;
+                        transition: .3s;
+                    }
+                }
+            }
+            
+            .tw{
+                background: rgb(0, 183, 255);
+            }
+
+            .lnk{
+                background: rgb(0, 85, 165);
+            }
+
+            .ig{
+                background: conic-gradient(
+                    from 240deg,
+                    #f09433,
+                    #e6683c,
+                    #dc2743,
+                    #cc2366,
+                    #bc1888,
+                    #e1306c,
+                    #fd1d1d,
+                    #f56040,
+                    #f77737,
+                    #fcaf45 370deg,
+                    #ffdc80 370deg,
+                    #f09433 370deg
+                );
+            }
+
+        }
+    }
+}
+
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transition: .3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+
+    &:hover {
+        background-color: var(--oscuro);
+        opacity: .6;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--oscuro);
+        animation: showRight 1s ease forwards;
+        animation-delay: 3.6s;
+        z-index: 11;
+    }
+}

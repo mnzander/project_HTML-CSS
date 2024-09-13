@@ -1,0 +1,119 @@
+.samurai{
+    margin-top: -250px;
+    padding: 50px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+
+    .foto{
+        padding: 50px;
+        position: absolute;
+        left: -300px;
+
+        .foto1 {
+            transform: scale(1.2);
+            transform-origin:left; /* Establece el punto de origen de la transformación en el centro de la imagen */
+        }
+    }
+
+    .info {
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+
+        .subtitle{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            color: #737373;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .subtitle::before {
+            content:"";
+            width: 50px;
+            height: 1px;
+            background-color: red;
+            position:absolute;
+            top: -25px;
+        }
+
+        .title{
+            color: #1a1d24;
+            font-size: 2.313rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+            margin: 25px 0px;
+        }
+
+        .hbo {
+            display: inline-flex;
+            gap: 25px;
+            font-size: 13px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        .descripcion {
+            color: #737373;
+            font-size: 16px; 
+            letter-spacing: 0.5px;
+            margin: 20px 0px;
+        }
+
+        .botones{
+            display: flex;
+            gap: 30px;
+
+            button {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                letter-spacing: 1px;
+                font-weight: bolder;
+                text-transform: uppercase;
+
+                .arrow {
+                    fill:#e0041d;
+                    height: 13px;
+                    width: 13px;
+                    margin-right: 5px;
+                }
+
+                .play{
+                    fill:#000000;
+                    height: 17px;
+                    width: 17px;
+                    margin-right: 5px;
+                }
+
+                .view {
+                    color: #e0041d;
+                }
+
+                .view:hover{
+                    color: #85000f;
+                    cursor: pointer;
+                    transition: 0.1s ease;
+                }
+
+                .trailer {
+                    color: #1a1d24;
+                }
+
+                .trailer:hover{
+                    color: #e0041d;
+                    cursor: pointer;
+                    transition: 0.1s ease;
+                }
+            }    
+        }
+    }
+}
+
+

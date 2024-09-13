@@ -1,0 +1,127 @@
+.azul {
+    background-color: #1a1d24;
+    padding-bottom: 60px;
+    width: inherit; /* Que herede de su padre (body) la misma medida */
+}
+
+.main {
+    margin-bottom: 70px;
+    background-color: #1a1d24;
+}
+
+.news { /*Sección NEWS*/
+    display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    gap: 30px; /* Espacio del aside con la foto */
+    position: relative; /* Ponemos la posición del padre en relativo para introducir la noticia en medio */
+}
+
+.news .caja {
+    inline-size: 850px;  /* Lo mismo que width */
+    block-size: 610px; /* Lo mismo que height */
+}
+
+.news .image {
+    inline-size: 850px;  /* Lo mismo que width */
+    block-size: 610px; /* Lo mismo que height */
+    object-fit: cover; /* Ajusta la imagen a los margenes establecidos*/
+}
+
+.news .mainnew {
+    max-inline-size: 400px; /* Máxima ALTURA de la caja */ 
+    padding-block-start: 33px; /* Padding Altura desde el principio (Arriba a la Izquierda) */
+    padding-inline-start: 29px; /* Padding Anchura desde el principio (Arriba a la Izquierda) */
+    position: absolute;
+    right: 150px; /*Lo movemos en el eje X*/
+    bottom: 0; /*Lo dejamos a la altura del final de la foto*/ 
+    background-color: #1a1d24;
+}
+
+.news .mainnew h5{
+    font-size: 37px; /* Tamaño de la fuente del titulo*/
+    color: #ffffff; /* Color Blanco */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Todo en mayusculas */
+}
+
+.news .mainnew p{
+    font-size: 14px; /* Tamaño de la fuente del texto*/
+    color: #a8a8a8; /* Color Gris */
+    margin-block: 24px; /*Añade un margen arriba y abajo, como hacer margin top y margin bottom*/
+}
+
+.news .mainnew .button .more{
+    font-size: 12px; /* Tamaño de la fuente del boton*/
+    color: #ffffff; /* Color Blanco */
+    font-weight: bold; /* Negrita */
+    letter-spacing: 1px;
+    text-transform: uppercase;/* Todo en mayusculas */
+    position: relative;
+}
+
+.news .mainnew .button .more:hover{
+    cursor: pointer;
+    color: #e0041d;
+    transition: 0.3s ease;
+}
+
+.news .mainnew .button .more svg{
+    height: 14px;
+    width: 14px;
+    fill:#e0041d;
+    margin-left: 10px;
+    position: absolute;
+
+}
+
+.news .aside .title { /*RECENT NEWS*/ 
+    font-size: 17px; /* Tamaño de la fuente de RECENT NEWS*/
+    color: #ffffff; /* Color Blanco */
+    margin-block-end: 32px; /*Pone un margen de 32px debajo del texto, con las NEWS */
+    text-transform: uppercase; /* Todo en mayusculas */
+    font-weight: bold; /* Negrita */
+    position: relative;
+}
+
+.news .aside .title::after {
+    content:"";
+    width: 30px;
+    height: 1px;
+    background-color: #e0041d;
+    position: absolute;
+    margin-left: 20px;
+    top: 50%;
+}
+
+.news .aside .list .item .data .item-title { /*DUDA: Por qué el texto no respeta el layout-box?*/
+    color: #ffffff; /* Color Blanco */
+    font-size: 16px; /* Tamaño de la letra */
+    font-weight: bold; /* Negrita */
+}
+
+.news .aside .list .item .data .item-title:hover{
+    opacity: 75%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.news .aside .list .item .data .item-date {
+    color: #a8a8a8; /* Color Gris */
+    font-size: 12px; /* Tamaño de la letra */
+}
+
+.news .aside .list .item .data .item-date:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.news .aside .item{
+    display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    gap: 18px; /* Espacio entre las fotos y las noticias*/
+}
+
+.news .aside .list{
+    display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal disponible */
+    flex-direction: column; /*El contenedor se ordena en forma de columna */
+    gap: 30px; /* Espacio entre las fotos*/
+}

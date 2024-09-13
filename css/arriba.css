@@ -1,0 +1,29 @@
+.arriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1a1d24;
+    height: 50px;
+    width: 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.733);
+
+    svg {
+        height: 25px;
+        width: 25px;
+        fill: #ffffff;
+
+        &:hover{
+            fill:#e0041d;
+            cursor: pointer;
+        }
+
+    }
+
+
+    
+}
+
+

@@ -1,0 +1,61 @@
+.black{
+    width: 100%;
+    background-color: rgba(10, 24, 40, 0.2); /* Opacidad aplicada solo al fondo */
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding:25px 10%;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    
+        .logo {
+            font-size: 25px;
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--oscuro);
+                animation: showRight 1s ease forwards;
+                animation-delay: .4s;
+            }
+        }
+    
+        .navbar a {
+            font-size: 18px;
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+            border-bottom: 2px solid transparent; /* Para que NO suba el texto con el HOVER */
+
+            &:hover {
+                cursor: pointer; /*Al poner el cursor sale el pointer*/
+                padding-block-end: 5px;
+                border-bottom: 2px solid var(--dorado); /* Pone un borde de 2px debajo */
+                transition: .3s ease;
+            }
+
+            &:hover,
+            &.active {
+                color: var(--turquesa);
+            }
+        }
+    }
+    
+}

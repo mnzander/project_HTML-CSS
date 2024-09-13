@@ -1,0 +1,195 @@
+.overview{
+    background-color: #1a1d24;
+    width: 100%;
+
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        /* padding-left: 40px; */
+        padding-top: 40px;
+        gap: 10px;
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 946px ;
+            height: 1px;
+            background-color: #e0041d;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        .info1{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            .i1{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                padding-right: 15px;
+
+                .greyinfo{
+                    color:#949494;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    padding-right: 5px;
+                }
+    
+                .white{
+                    color: #ffffff;
+                    padding-right: 5px;
+                    font-size: 15px;
+                }
+                
+                .red{
+                    color: #e0041d;
+                    padding-right: 5px;
+                    font-size: 15px;
+
+                    &:hover{
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        /* padding-left: 40px; */
+        padding-top: 20px;
+        gap: 10px;
+
+        .saga{
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        .desc{
+            color: #ffffff;
+        }
+    }
+}
+
+.activity{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: #1a1d24;
+    width: 100%;
+
+    .notes{
+        display: flex;
+        flex-direction: column;
+        /* padding-left: 40px; */
+        margin-bottom: 20px;
+
+        h5{
+            color:#949494;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .boton {
+            display: flex;
+            align-items: center;
+            background-color: #bebebe;
+            width: 136px;
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 10px;
+
+            &:hover{
+                background-color: #666;
+                cursor: pointer;
+
+                svg{
+                    fill:#bebebe;
+                }
+
+                .notes{
+                    color: #bebebe;
+                }
+            }
+
+            svg{
+                fill:#666;
+                width: 25px;
+                height: 25px;
+                flex-shrink: 0; /*Evita que cambie el tamaño */
+                margin-right: -30px; /* Añadimos un pequeño margen para separar del texto */
+            }
+
+            .notes{
+                display: flex;
+                color: #666;
+                text-transform: uppercase;
+                font-size: 14px;
+                margin: 0;
+                margin-left: 35px;
+            }
+        }
+    }
+
+    .trailer{
+        display: flex;
+        flex-direction: column;
+        /* padding-left: 40px; */
+
+        h5{
+            color:#949494;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .boton {
+            display: flex;
+            align-items: center;
+            background-color: #bebebe;
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 10px;
+
+            &:hover{
+                background-color: #666;
+                cursor: pointer;
+
+                svg{
+                    fill:#bebebe;
+                }
+
+                .notes{
+                    color: #bebebe;
+                    font-weight: bold;
+                }
+            }
+
+            svg{
+                fill:#666;
+                width: 25px;
+                height: 25px;
+                flex-shrink: 0; /*Evita que cambie el tamaño */
+                margin-right: -30px; /* Añadimos un pequeño margen para separar del texto */
+            }
+            .notes{
+                color: #666;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0;
+                margin-left: 35px;
+            }
+        }
+    }
+}

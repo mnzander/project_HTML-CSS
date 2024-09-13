@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i have the highground</title>
+    <link rel="stylesheet" href="css/reset.css" /> <!--FUENTES y LIST:NONE-->
+    <link rel="stylesheet" href="css/detalle/estilos.css" /> <!--*, BODY y LAYOUT BOX-->
+    <link rel="stylesheet" href="css/header.css" /> <!--HEADER-->
+    <link rel="stylesheet" href="css/aside.css" /> <!--BOTONES ROJOS-->
+    <link rel="stylesheet" href="css/detalle/main.css" /> <!--MAIN-->
+    <link rel="stylesheet" href="css/detalle/overview.css" /> <!--OVERVIEW-->
+    <link rel="stylesheet" href="css/detalle/actores.css" /> <!--ACTORES-->
+    <link rel="stylesheet" href="css/detalle/comments.css" /> <!--COMMENTS-->
+    <link rel="stylesheet" href="css/detalle/youmaylike.css" /> <!--You May Also Like-->
+    <link rel="stylesheet" href="css/arriba.css" /> <!--Botón de ir hacia arriba-->
+    <link rel="stylesheet" href="css/footer.css" /> <!--FOOTER-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" />
+</head>
+<body>
+    <!--HEADER-->
+    <div class="backgroundheader">
+        <header class="header-container layout-box">
+            <!--LOGO-->
+            <img src="images/logo-1x.png" alt="logo filmax" class="logo">
+            <!--MENU-->
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="item"><a href="index.html">HOME</a></li>
+                    <li class="item"><a href="#">FEATURES</a></li>
+                    <li class="item"><a href="#">ABOUT</a></li>
+                    <li class="item"><a href="#">NEWS</a></li>
+                    <li class="item"><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <!--BOTON SEARCH-->
+                <search class="search">
+                    <button class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48">
+                            <path fill="white" d="M 20.5 6 C 12.509634 6 6 12.50964 6 20.5 C 6 28.49036 12.509634 35 20.5 35 C 23.956359 35 27.133709 33.779044 29.628906 31.75 L 39.439453 41.560547 A 1.50015 1.50015 0 1 0 41.560547 39.439453 L 31.75 29.628906 C 33.779044 27.133709 35 23.956357 35 20.5 C 35 12.50964 28.490366 6 20.5 6 z M 20.5 9 C 26.869047 9 32 14.130957 32 20.5 C 32 23.602612 30.776198 26.405717 28.791016 28.470703 A 1.50015 1.50015 0 0 0 28.470703 28.791016 C 26.405717 30.776199 23.602614 32 20.5 32 C 14.130953 32 9 26.869043 9 20.5 C 9 14.130957 14.130953 9 20.5 9 z"></path>
+                        </svg>
+                    </button>
+                </search>
+                <!--BOTON Redes Sociales-->
+                <nav class="nav">
+                    <ul class="social">
+                        <li>
+                            <a class="social" href="https://twitter.com/ThemerexThemes">
+                                <svg class="tw" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                    <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social" href="https://www.facebook.com/ThemeRexStudio/">
+                                <svg class="fb" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <path d="M 27.689453 2.0371094 C 24.410243 2.0371094 21.627143 3.0524604 19.751953 5.0898438 C 17.876763 7.1272271 16.998047 10.032839 16.998047 13.5 L 16.998047 17 L 13.517578 17 C 11.589931 17 9.9985023 18.604801 10.017578 20.533203 L 10.046875 23.537109 A 1.50015 1.50015 0 0 0 10.046875 23.539062 C 10.069385 25.440659 11.647206 27.005642 13.550781 27.003906 L 17 27.001953 L 17 43.5 C 17 45.414955 18.585045 47 20.5 47 L 24.5 47 C 26.414955 47 28 45.414955 28 43.5 L 28 27 L 31.095703 27 C 32.859472 27 34.367374 25.656297 34.572266 23.904297 L 34.921875 20.904297 C 35.160419 18.850746 33.513658 17 31.445312 17 L 28.019531 17 L 28.0625 13.712891 A 1.50015 1.50015 0 0 0 28.0625 13.693359 C 28.0625 13.00752 28.583692 12.486328 29.269531 12.486328 L 32.177734 12.486328 C 33.735895 12.486328 35.03125 11.190973 35.03125 9.6328125 L 35.03125 5.0625 C 35.03125 3.596878 33.891093 2.3503008 32.433594 2.21875 A 1.50015 1.50015 0 0 0 32.429688 2.21875 C 32.145313 2.1938679 30.177903 2.0371094 27.689453 2.0371094 z M 27.689453 5.0371094 C 29.967263 5.0371094 32.01319 5.2007464 32.03125 5.2011719 L 32.03125 9.4863281 L 29.269531 9.4863281 C 26.963371 9.4863281 25.0625 11.387199 25.0625 13.693359 L 25 18.480469 A 1.50015 1.50015 0 0 0 26.5 20 L 31.445312 20 C 31.770968 20 31.978863 20.236144 31.941406 20.558594 L 31.59375 23.556641 C 31.562642 23.82264 31.361935 24 31.095703 24 L 26.5 24 A 1.50015 1.50015 0 0 0 25 25.5 L 25 43.5 C 25 43.795045 24.795045 44 24.5 44 L 20.5 44 C 20.204955 44 20 43.795045 20 43.5 L 20 25.5 A 1.50015 1.50015 0 0 0 18.5 24 L 13.548828 24.003906 A 1.50015 1.50015 0 0 0 13.546875 24.003906 C 13.257582 24.00417 13.051932 23.798417 13.046875 23.505859 L 13.017578 20.503906 C 13.014704 20.208314 13.221226 20 13.517578 20 L 18.498047 20 A 1.50015 1.50015 0 0 0 19.998047 18.5 L 19.998047 13.5 C 19.998047 10.534161 20.731877 8.4584135 21.960938 7.1230469 C 23.189996 5.7876802 25.001663 5.0371094 27.689453 5.0371094 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social" href="https://www.instagram.com/themerex_net/">
+                                <svg class="ig" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social" href="https://www.youtube.com/channel/UCnFisBimrK2aIE-hnY70kCA">
+                                <svg class="yt" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                                    <path d="M 16.201172 8 L 18.539062 15.683594 L 18.539062 20.724609 L 20.501953 20.724609 L 20.501953 15.443359 L 22.789062 8.0019531 L 20.791016 8.0019531 L 19.574219 13.089844 L 19.451172 13.089844 L 18.177734 8 L 16.201172 8 z M 25.300781 11.101562 C 24.508781 11.101562 23.87625 11.317047 23.40625 11.748047 C 22.93525 12.175047 22.701172 12.757375 22.701172 13.484375 L 22.701172 18.351562 C 22.701172 19.149562 22.930672 19.785859 23.388672 20.255859 C 23.850672 20.727859 24.458609 20.964844 25.224609 20.964844 C 26.017609 20.964844 26.636797 20.735297 27.091797 20.279297 C 27.541797 19.820297 27.767578 19.189719 27.767578 18.386719 L 27.767578 13.537109 C 27.767578 12.823109 27.534219 12.237156 27.074219 11.785156 C 26.615219 11.329156 26.025781 11.101562 25.300781 11.101562 z M 29.251953 11.339844 L 29.251953 19.185547 C 29.251953 19.747547 29.351641 20.164359 29.556641 20.443359 C 29.761641 20.722359 30.06675 20.861328 30.46875 20.861328 C 30.79475 20.861328 31.132516 20.757547 31.478516 20.560547 C 31.828516 20.361547 32.162375 20.0705 32.484375 19.6875 L 32.484375 20.724609 L 34.230469 20.724609 L 34.230469 11.339844 L 32.486328 11.339844 L 32.486328 18.464844 C 32.323328 18.666844 32.144266 18.83875 31.947266 18.96875 C 31.753266 19.10075 31.589938 19.166016 31.460938 19.166016 C 31.299937 19.166016 31.178422 19.113625 31.107422 19.015625 C 31.032422 18.916625 30.994141 18.755109 30.994141 18.537109 L 30.994141 11.339844 L 29.251953 11.339844 z M 25.21875 12.726562 C 25.44975 12.726562 25.637344 12.792969 25.777344 12.917969 C 25.919344 13.043969 25.990234 13.209109 25.990234 13.412109 L 25.990234 18.525391 C 25.990234 18.777391 25.92025 18.977187 25.78125 19.117188 C 25.63925 19.262187 25.454797 19.335938 25.216797 19.335938 C 24.986797 19.335938 24.8095 19.262047 24.6875 19.123047 C 24.5585 18.982047 24.496094 18.781391 24.496094 18.525391 C 24.496094 18.525391 24.496047 13.412109 24.498047 13.412109 C 24.498047 13.209109 24.564266 13.043969 24.697266 12.917969 C 24.830266 12.791969 25.00475 12.726562 25.21875 12.726562 z M 24.998047 22.925781 C 21.633047 22.921781 18.333375 22.979234 15.109375 23.115234 C 12.855375 23.115234 11.021484 24.927203 11.021484 27.158203 C 10.888484 28.923203 10.828031 30.693891 10.832031 32.462891 C 10.826031 34.229891 10.887438 35.998578 11.023438 37.767578 C 11.023438 40.002578 12.854375 41.814453 15.109375 41.814453 C 18.334375 41.948453 21.633047 42.006 24.998047 42 C 28.366047 42.007 31.663719 41.947453 34.886719 41.814453 C 37.142719 41.814453 38.976562 40.003578 38.976562 37.767578 C 39.110563 35.997578 39.173969 34.229891 39.167969 32.462891 C 39.174969 30.693891 39.112563 28.923203 38.976562 27.158203 C 38.976562 24.925203 37.143719 23.115234 34.886719 23.115234 C 31.663719 22.980234 28.366047 22.922781 24.998047 22.925781 z M 25.529297 25.822266 L 27.265625 25.822266 C 27.373625 25.822266 27.458984 25.909578 27.458984 26.017578 L 27.458984 29.5625 C 27.601984 29.4325 27.75225 29.323375 27.90625 29.234375 C 28.20025 29.071375 28.497875 28.990234 28.796875 28.990234 C 29.403875 28.990234 29.875219 29.216062 30.199219 29.664062 C 30.509219 30.094062 30.666016 30.712859 30.666016 31.505859 L 30.667969 36.634766 C 30.667969 37.336766 30.51775 37.883672 30.21875 38.263672 C 29.91175 38.660672 29.468438 38.861328 28.898438 38.861328 C 28.537437 38.861328 28.203156 38.787625 27.910156 38.640625 C 27.753156 38.559625 27.601984 38.456125 27.458984 38.328125 L 27.458984 38.550781 C 27.458984 38.658781 27.373625 38.744141 27.265625 38.744141 L 25.529297 38.744141 C 25.421297 38.744141 25.335938 38.658781 25.335938 38.550781 L 25.335938 26.017578 C 25.335938 25.909578 25.421297 25.822266 25.529297 25.822266 z M 13.029297 25.824219 L 18.970703 25.824219 C 19.078703 25.824219 19.164062 25.911531 19.164062 26.019531 L 19.164062 27.833984 C 19.164063 27.941984 19.078703 28.027344 18.970703 28.027344 L 17.160156 28.027344 L 17.160156 38.548828 C 17.160156 38.656828 17.074797 38.742187 16.966797 38.742188 L 15.03125 38.742188 C 14.92325 38.742188 14.837891 38.656828 14.837891 38.548828 L 14.837891 28.027344 L 13.029297 28.027344 C 12.921297 28.027344 12.835938 27.941984 12.835938 27.833984 L 12.835938 26.019531 C 12.835937 25.911531 12.921297 25.824219 13.029297 25.824219 z M 34.380859 28.873047 C 35.220859 28.873047 35.879891 29.129719 36.337891 29.636719 C 36.791891 30.141719 37.021484 30.863156 37.021484 31.785156 L 37.021484 34.144531 C 37.021484 34.252531 36.933172 34.338844 36.826172 34.339844 L 33.736328 34.339844 L 33.736328 35.886719 C 33.736328 36.451719 33.813 36.691922 33.875 36.794922 C 33.926 36.878922 34.020063 36.984375 34.289062 36.984375 C 34.507063 36.984375 34.653469 36.931125 34.730469 36.828125 C 34.767469 36.774125 34.863281 36.560719 34.863281 35.886719 L 34.863281 35.242188 C 34.863281 35.134187 34.948641 35.048828 35.056641 35.048828 L 36.824219 35.048828 C 36.932219 35.048828 37.019531 35.134188 37.019531 35.242188 L 37.019531 35.9375 C 37.019531 36.9335 36.782266 37.697938 36.322266 38.210938 C 35.859266 38.728938 35.160094 38.992188 34.246094 38.992188 C 33.421094 38.992187 32.760203 38.711156 32.283203 38.160156 C 31.811203 37.617156 31.572266 36.869547 31.572266 35.935547 L 31.572266 31.785156 C 31.572266 30.935156 31.835469 30.230453 32.355469 29.689453 C 32.876469 29.147453 33.557859 28.873047 34.380859 28.873047 z M 18.949219 29.109375 L 20.669922 29.109375 C 20.777922 29.109375 20.863281 29.194734 20.863281 29.302734 L 20.863281 36.388672 C 20.863281 36.621672 20.904641 36.716953 20.931641 36.751953 C 20.943641 36.766953 20.979 36.816406 21.125 36.816406 C 21.175 36.816406 21.288187 36.79525 21.492188 36.65625 C 21.658188 36.54425 21.806453 36.410953 21.939453 36.251953 L 21.939453 29.302734 C 21.939453 29.194734 22.026766 29.109375 22.134766 29.109375 L 23.853516 29.109375 C 23.961516 29.109375 24.048828 29.194734 24.048828 29.302734 L 24.048828 38.546875 L 24.050781 38.546875 L 24.050781 38.548828 C 24.050781 38.656828 23.963469 38.741187 23.855469 38.742188 L 22.136719 38.742188 C 22.028719 38.742188 21.941406 38.656828 21.941406 38.548828 L 21.941406 38.023438 C 21.712406 38.245438 21.482141 38.421641 21.244141 38.556641 C 20.870141 38.771641 20.513391 38.876953 20.150391 38.876953 C 19.690391 38.876953 19.333703 38.711766 19.095703 38.384766 C 18.870703 38.074766 18.755859 37.617297 18.755859 37.029297 L 18.755859 29.302734 C 18.755859 29.194734 18.841219 29.109375 18.949219 29.109375 z M 28.091797 30.851562 C 27.978172 30.831563 27.844625 30.850875 27.703125 30.921875 C 27.623125 30.961875 27.544891 31.022422 27.462891 31.107422 L 27.462891 36.710938 C 27.565891 36.815937 27.667719 36.893406 27.761719 36.941406 C 27.866719 36.993406 27.971891 37.019531 28.087891 37.019531 C 28.306891 37.019531 28.373531 36.932344 28.394531 36.902344 C 28.447531 36.834344 28.507812 36.693719 28.507812 36.386719 L 28.507812 31.611328 C 28.507812 31.346328 28.458281 31.142578 28.363281 31.017578 C 28.300281 30.931578 28.205422 30.871562 28.091797 30.851562 z M 34.302734 30.884766 C 34.096734 30.884766 33.955094 30.941641 33.871094 31.056641 C 33.810094 31.141641 33.736328 31.341438 33.736328 31.773438 L 33.736328 32.513672 L 34.861328 32.513672 L 34.861328 31.773438 C 34.861328 31.348437 34.781797 31.147734 34.716797 31.052734 C 34.636797 30.939734 34.500734 30.884766 34.302734 30.884766 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- Panel Lateral -->
+    <section class="lateral">
+        <div class="caja caja1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
+            </svg>
+        </div>
+        <div class="caja caja2">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960">
+                <path d="M320-320h480v-480h-80v280l-100-60-100 60v-280H320v480Zm0 80q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm360-720h200-200Zm-200 0h480-480Z"/>
+            </svg>
+        </div>
+        <div class="caja caja3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h420v-140H160v140Zm500 0h140v-360H660v360ZM160-460h420v-140H160v140Z"/>
+            </svg>
+        </div>
+    </section>
+    <!-- MAIN -->
+    <main class="imagen">
+        <div class="menu layout-box">
+            <img src="/images/rotsmini.jpg" alt="Cartel de Star Wars" class="rots">
+            <nav class="opciones">
+                <ul class="lista">
+                    <li class="item selected"><a href="#overview">Overview</a></li>
+                    <li class="item"><a href="#activity">Activity</a></li>
+                    <li class="item"><a href="#actors">Actors</a></li>
+                    <li class="item"><a href="#comments">Comments</a></li>
+                    <li class="item"><a href="#youmay">You May Also Like</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="data layout-box2">
+            <div class="titulos">
+                <h1 class="pretitle">Star Wars: Prequels Collection</h1>
+                <div class="info">
+                    <h2 class="title">Star Wars: Episode III - Revenge of the Sith</h2>
+                    <h3 class="date">2005</h3>
+                    <p class="pegi">PG-13</p>
+                </div>
+            </div>
+        </div>
+        <div class="black">
+            <div class="rating layout-box2">
+                <div class="rate">
+                    <div class="horizon">
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1">
+                            <g transform="translate(0 -1028.4)">
+                                <path d="m7 1031.4c-1.5355 0-3.0784 0.5-4.25 1.7-2.3431 2.4-2.2788 6.1 0 8.5l9.25 9.8 9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-0.75 0.8-0.75-0.8c-1.172-1.2-2.7145-1.7-4.25-1.7z" fill="#c0392b"/>
+                            </g>
+                        </svg>
+                        <div class="vertical">
+                            <p class="class1">76%</p>
+                            <p class="class2">29.1 votes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="horizon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960" fill="#ffffff">
+                            <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/>
+                        </svg>
+                        <div class="vertical">
+                            <p class="class1">Rate this movie</p>
+                            <p class="class2">What did you think?</p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="rate">
+                    <p class="class1">288k</p>
+                    <p class="class2">watchers</p>
+                </div>
+                <div class="rate">
+                    <p class="class1">384k</p>
+                    <p class="class2">plays</p>
+                </div>
+                <div class="rate">
+                    <p class="class1">579k</p>
+                    <p class="class2">collected</p>
+                </div>
+                <div class="rate">
+                    <p class="class1">68</p>
+                    <p class="class2">comments</p>
+                </div>
+                <div class="rate">
+                    <p class="class1">32.0k</p>
+                    <p class="class2">lists</p>
+                </div>
+                <div class="rate">
+                    <p class="class1">380</p>
+                    <p class="class2">favorited</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- OVERVIEW y ACTIVITY-->
+    <section id="overview" class="overview">
+        <div class="informacion layout-box2">
+            <div class="info1">
+                <div class="i1">
+                    <h4 class="greyinfo">Released</h4>
+                    <p class="white">May 19, 2005</p>
+                    <p class="red">+ 77 more</p>
+                </div>
+                <div class="i1">
+                    <h4 class="greyinfo">DVD</h4>
+                    <p class="white">November 1, 2005</p>
+                </div>
+                <div class="i1">
+                    <h4 class="greyinfo">Runtime</h4>
+                    <p class="white">2h 20m</p>
+                </div>
+            </div>
+            <div class="info1">
+                <div class="i1">
+                    <h4 class="greyinfo">Director</h4>
+                    <p class="red">George Lucas</p>
+                </div>
+                <div class="i1">
+                    <h4 class="greyinfo">Writers</h4>
+                    <p class="red">George Lucas</p>
+                    <p class="white">(screenplay)</p>
+                    <p class="red">+ 1 more</p>
+                </div>
+            </div>
+            <div class="info1">
+                <div class="i1">
+                    <h4 class="greyinfo">Country</h4>
+                    <p class="white">Unided States</p>
+                </div>
+                <div class="i1">
+                    <h4 class="greyinfo">Languages</h4>
+                    <p class="white">English</p>
+                </div>
+                <div class="i1">
+                    <h4 class="greyinfo">Studio</h4>
+                    <p class="white">Lucasfilm</p>
+                </div>
+            </div>
+            <div class="info1">
+                <div class="i1">
+                    <h4 class="greyinfo">Genres</h4>
+                    <p class="white">Action, Adventure, Science Fiction, Romance</p>
+                </div>
+            </div>
+        </div>
+        <div class="descripcion layout-box2">
+            <p class="saga">The saga is complete.</p>
+            <p class="desc">En esta última entrega de la saga galáctica, las Guerras Clon continúan, siendo cada vez mayor la tensión y la mutua desconfianza entre el Canciller Supremo Palpatine y el Consejo Jedi. Anakin Skywalker, joven caballero Jedi y discípulo del maestro Obi-Wan Kenobi, se debate entre la fidelidad a sus promesas como Jedi al servicio de la libertad de la República y las tentadoras ofertas del ambicioso Lord Palpatine. El amor de Anakin por Padmé Amidala, su esposa, sufre una conmoción al saber que está embarazada.</p>
+        </div>
+    </section>
+    <section id="activity" class="activity">
+        <div class="notes layout-box2">
+            <h5>PRIVATE NOTES</h5>
+            <button class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960">
+                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v268q-19-9-39-15.5t-41-9.5v-243H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm-20-80h40v-100h100v-40H740v-100h-40v100H600v40h100v100Z"/>
+                </svg>
+                    <p class="notes">Add<span style="font-weight: bold;">Private Notes</span></p>
+            </button>
+        </div>
+        <div class="trailer layout-box2">
+            <h5>VIDEOS</h5>
+            <button class="boton">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 461.001 461.001" xml:space="preserve">
+                    <g>
+                        <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+                    </g>
+                </svg>
+                <p class="notes">TRAILER</p>
+            </button>
+        </div>
+    </section> 
+    <!--Actores!-->
+    <section id="actors" class="actores">
+        <div class="titulo layout-box2">
+            <h3>Actors</h3>
+            <p class="all">All Cast & Crew</p>
+            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+            </svg>
+        </div>
+        <div class="container layout-box2">
+            <article class="item anakin">
+                <div class="actor">
+                    <p class="nombre">Hayden Christensen</p>
+                    <p class="personaje">Anakin Skywalker</p>
+                </div>
+            </article>
+            <article class="item obi">
+                <div class="actor">
+                    <p class="nombre">Ewan McGregor</p>
+                    <p class="personaje">Obi-Wan Kenobi</p>
+                </div>
+            </article>
+            <article class="item padme">
+                <div class="actor">
+                    <p class="nombre">Natalie Portman</p>
+                    <p class="personaje">Padmé Amidala</p>
+                </div>
+            </article>
+            <article class="item sheev">
+                <div class="actor">
+                    <p class="nombre">Ian McDiarmid</p>
+                    <p class="personaje">Sheev Palpatine</p>
+                </div>
+            </article>
+            <article class="item windu">
+                <div class="actor">
+                    <p class="nombre">Samual L. Jackson</p>
+                    <p class="personaje">Mace Windu</p>
+                </div>
+            </article>
+            <article class="item bail">
+                <div class="actor">
+                    <p class="nombre">Jimmy Smits</p>
+                    <p class="personaje">Bail Organa</p>
+                </div>
+            </article>
+            <article class="item yoda">
+                <div class="actor">
+                    <p class="nombre">Frank Oz</p>
+                    <p class="personaje">Yoda (voice)</p>
+                </div>
+            </article>
+            <article class="item c3po">
+                <div class="actor">
+                    <p class="nombre">Anthony Daniel</p>
+                    <p class="personaje">C-3PO</p>
+                </div>
+            </article>
+            <article class="item dooku">
+                <div class="actor">
+                    <p class="nombre">Christopher Lee</p>
+                    <p class="personaje">Count Dooku</p>
+                </div>
+            </article>
+            <article class="item clone">
+                <div class="actor">
+                    <p class="nombre">Temuera Morrison</p>
+                    <p class="personaje">Clones</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--Comments-->
+    <section id="comments" class="comments">
+        <div class="titulo layout-box2">
+            <h3>Comments</h3>
+            <p class="all">All 68 Comments</p>
+            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+            </svg>
+        </div>
+        <div class="flex layout-box2">
+            <article class="comentario">
+                <div class="encabezado">
+                    <svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                    </svg>
+                    <div class="postsvg">
+                        <p class="shout">Shout by <span id="name">Cristina M.</span> <button>VIP</button></p>
+                        <data>Dec 21, 2015 3:48 AM <span>- updated Dec 3, 2020</span></data>
+                    </div>
+                    <div class="reacciones">
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+                        </svg>
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/>
+                        </svg>
+                        <p class="text">8 Likes</p>
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/>
+                        </svg>
+                        <p class="text">0 Replies</p>
+                    </div>
+                </div>
+                <div class="texto">
+                    <p>The lightsaber duels makes this one good. The writing should have been better than the Jedis knowing nothing of the Anakin and Padme relationship. I mean they did kiss in front of the Jedis during the arena scene in Episode 2.</p>
+                    <p>While Anakin said to Obi-Wan a couple of times how he wanted Padme bad. Anakin turning to the darkside because he believed only that can save Padme. That the Jedis were the bad guys. I didn't 100% buy either.</p>
+                    <p>Since how can he think something called the darkside is good ? The same way the Nazis or terrorists think they are the good guys I guess.</p>
+                    <p>Ewan McGregor isn't bad at all but he was a choice for worse actor of 2005 at imdb that year. He was far better than Hayden. He gave it his all as Obi-Wan and has even been called miscast.</p>
+                    <p>Ian McDiarmid however steals the show when he finally reveals to the Jedis that he is a Sith Lord.</p>
+                    <p>I also like how Palpatine turned on Count Dooku in favor of wanting a new apprentice, Anakin. Since if you think of it; he did the same with Luke and Vader in Return of the Jedi.</p>
+                    <p>He wanted Luke to kill his father and join him. It shows how little his apprentices mean to him since he easily trades them in when he finds someone more powerful.</p>
+                </div>
+            </article>
+            <article class="comentario">
+                <div class="encabezado">
+                    <svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                    </svg>
+                    <div class="postsvg">
+                        <p class="shout">Review by <span id="name">Jar Jar Binks</span></p>
+                        <data>Oct 20, 2014 1:42 AM</data>
+                    </div>
+                    <div class="reacciones">
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+                        </svg>
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/>
+                        </svg>
+                        <p class="text">28 Likes</p>
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/>
+                        </svg>
+                        <p class="text">1 REPLY</p>
+                    </div>
+                </div>
+                <div class="texto">
+                    <p>
+                        It's the best of any of the Star Wars movies for me. Hayden Christiansen may not be a great actor but literally every other actor involved is great, and Ewan MacGregor is amazing (It's also worth noting that Harrison Ford is literally the only good actor in the originals but I won't get into that now). The story for this one makes more sense than any of the originals and adds a level of politics and historical/mythological background that is completely absent from the originals. The action and effects have obviously gotten better with time and because the people involved with Star Wars have so much experience. This movie is exactly what it was meant to be the Fall of Troy combined with Julius Caesar and a little bit of Oedipus thrown in there just for fun.
+                    </p>
+                </div>
+            </article>
+            <article class="comentario">
+                <div class="encabezado">
+                    <svg class="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                    </svg>
+                    <div class="postsvg">
+                        <p class="shout">Shout by <span id="name">Ander M.</span> <button>VIP</button></p>
+                        <data>Nov 4, 2016 4:41 AM <span>- updated Dec 8, 2021</span></data>
+                    </div>
+                    <div class="reacciones">
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+                        </svg>
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/>
+                        </svg>
+                        <p class="text">66 Likes</p>
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/>
+                        </svg>
+                        <p class="text">0 Replies</p>
+                    </div>
+                </div>
+                <div class="texto">
+                   <p>
+                        Did you ever hear the tragedy of Darth Plagueis the Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a dark lord of the Sith, so powerful and so wise, he could use the force to influence the midichlorians to create... life. He had such a knowledge of the dark side, that he could even keep the ones he cared about from dying. The dark side of the force is a pathway to many abilities some consider to be unnatural. He became so powerful, the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. It's ironic. He could save others from death, but not himself.
+                   </p> 
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--YOU MAY ALSO LIKE-->
+    <section id="youmay" class="also">
+        <div class="titulo layout-box2">
+            <h3>You may also like</h3>
+        </div>
+        <div class="grid layout-box2">
+            <article class="item band">
+                <div class="gradient">
+                    <div class="centrar">
+                        <div class="circulo">
+                            <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <p class="subtitle">Adventure</p>
+                        <h4 class="title">Pirates Bay</h3>
+                        <div class="info">
+                            <time class="date">On Dec 4, 2017</time>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e8eaed">
+                                <path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/>
+                            </svg>
+                            <span class="likes">0</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="item gladiator">
+                <div class="gradient">
+                    <div class="centrar">
+                        <div class="circulo">
+                            <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <p class="subtitle">Action, Adventure</p>
+                        <h4 class="title">Gladiator</h3>
+                        <div class="info">
+                            <time class="date">On Dec 4, 2017</time>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e8eaed">
+                                <path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                            <span class="likes">0</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!--Highground!-->
+    <div class="arriba">
+        <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+            </svg>
+        </a>
+    </div>
+    <!--FOOTER-->
+    <footer class="footer">
+        <section class="container layout-box">
+            <!--Logo-->
+            <div class="logotipo">
+                <img src="images/logo-1x.png" alt="Logotipo de Filmax">
+                <p class="copy"><span>ThemeREX</span> &copy; 2024. All rights reserved.</p>
+            </div>
+            <!--Movies-->
+            <nav class="movies">
+                <h3>MOVIES</h3>
+                <ul class="lista">
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/category/film-news/">Film News</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/category/action/">Action</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/category/coming-soon/">Coming Soon</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/category/most-popular/">Most Popular</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/category/top-trailers/">Top Trailers</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Additional-->
+            <nav class="additional">
+                <h3>ADDITIONAL LINKS</h3>
+                <ul class="lista">
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/about-us/">About</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/gallery/">Gallery</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/service-plus/">Service Plus</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/privacy-policy/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://filmax.themerex.net/contacts/">Contacts</a>
+                    </li>
+                </ul>
+            </nav>     
+            <!--Newsletter-->
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <form class="form">
+                    <input class="email" placeholder="Newsletter Sign Up" type="email">
+                    <button class="boton" type="submit">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                    </button>
+                </form>
+                <div class="social">
+                    <nav class="socialmedia">
+                        <ul class="lista">
+                            <li class="item tw">
+                                <a class="fa fa-twitter" href="https://twitter.com/ThemerexThemes" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50" target="_blank">
+                                        <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="item fb">
+                                <a class="fa fa-facebook" href="https://www.facebook.com/ThemeRexStudio/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48" target="_blank">
+                                        <path d="M 27.689453 2.0371094 C 24.410243 2.0371094 21.627143 3.0524604 19.751953 5.0898438 C 17.876763 7.1272271 16.998047 10.032839 16.998047 13.5 L 16.998047 17 L 13.517578 17 C 11.589931 17 9.9985023 18.604801 10.017578 20.533203 L 10.046875 23.537109 A 1.50015 1.50015 0 0 0 10.046875 23.539062 C 10.069385 25.440659 11.647206 27.005642 13.550781 27.003906 L 17 27.001953 L 17 43.5 C 17 45.414955 18.585045 47 20.5 47 L 24.5 47 C 26.414955 47 28 45.414955 28 43.5 L 28 27 L 31.095703 27 C 32.859472 27 34.367374 25.656297 34.572266 23.904297 L 34.921875 20.904297 C 35.160419 18.850746 33.513658 17 31.445312 17 L 28.019531 17 L 28.0625 13.712891 A 1.50015 1.50015 0 0 0 28.0625 13.693359 C 28.0625 13.00752 28.583692 12.486328 29.269531 12.486328 L 32.177734 12.486328 C 33.735895 12.486328 35.03125 11.190973 35.03125 9.6328125 L 35.03125 5.0625 C 35.03125 3.596878 33.891093 2.3503008 32.433594 2.21875 A 1.50015 1.50015 0 0 0 32.429688 2.21875 C 32.145313 2.1938679 30.177903 2.0371094 27.689453 2.0371094 z M 27.689453 5.0371094 C 29.967263 5.0371094 32.01319 5.2007464 32.03125 5.2011719 L 32.03125 9.4863281 L 29.269531 9.4863281 C 26.963371 9.4863281 25.0625 11.387199 25.0625 13.693359 L 25 18.480469 A 1.50015 1.50015 0 0 0 26.5 20 L 31.445312 20 C 31.770968 20 31.978863 20.236144 31.941406 20.558594 L 31.59375 23.556641 C 31.562642 23.82264 31.361935 24 31.095703 24 L 26.5 24 A 1.50015 1.50015 0 0 0 25 25.5 L 25 43.5 C 25 43.795045 24.795045 44 24.5 44 L 20.5 44 C 20.204955 44 20 43.795045 20 43.5 L 20 25.5 A 1.50015 1.50015 0 0 0 18.5 24 L 13.548828 24.003906 A 1.50015 1.50015 0 0 0 13.546875 24.003906 C 13.257582 24.00417 13.051932 23.798417 13.046875 23.505859 L 13.017578 20.503906 C 13.014704 20.208314 13.221226 20 13.517578 20 L 18.498047 20 A 1.50015 1.50015 0 0 0 19.998047 18.5 L 19.998047 13.5 C 19.998047 10.534161 20.731877 8.4584135 21.960938 7.1230469 C 23.189996 5.7876802 25.001663 5.0371094 27.689453 5.0371094 z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="item ig">
+                                <a class="fa fa-instagram" href="https://www.instagram.com/themerex_net/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50" target="_blank">
+                                        <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="item yt">
+                                <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCnFisBimrK2aIE-hnY70kCA">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50" target="_blank">
+                                        <path d="M 16.201172 8 L 18.539062 15.683594 L 18.539062 20.724609 L 20.501953 20.724609 L 20.501953 15.443359 L 22.789062 8.0019531 L 20.791016 8.0019531 L 19.574219 13.089844 L 19.451172 13.089844 L 18.177734 8 L 16.201172 8 z M 25.300781 11.101562 C 24.508781 11.101562 23.87625 11.317047 23.40625 11.748047 C 22.93525 12.175047 22.701172 12.757375 22.701172 13.484375 L 22.701172 18.351562 C 22.701172 19.149562 22.930672 19.785859 23.388672 20.255859 C 23.850672 20.727859 24.458609 20.964844 25.224609 20.964844 C 26.017609 20.964844 26.636797 20.735297 27.091797 20.279297 C 27.541797 19.820297 27.767578 19.189719 27.767578 18.386719 L 27.767578 13.537109 C 27.767578 12.823109 27.534219 12.237156 27.074219 11.785156 C 26.615219 11.329156 26.025781 11.101562 25.300781 11.101562 z M 29.251953 11.339844 L 29.251953 19.185547 C 29.251953 19.747547 29.351641 20.164359 29.556641 20.443359 C 29.761641 20.722359 30.06675 20.861328 30.46875 20.861328 C 30.79475 20.861328 31.132516 20.757547 31.478516 20.560547 C 31.828516 20.361547 32.162375 20.0705 32.484375 19.6875 L 32.484375 20.724609 L 34.230469 20.724609 L 34.230469 11.339844 L 32.486328 11.339844 L 32.486328 18.464844 C 32.323328 18.666844 32.144266 18.83875 31.947266 18.96875 C 31.753266 19.10075 31.589938 19.166016 31.460938 19.166016 C 31.299937 19.166016 31.178422 19.113625 31.107422 19.015625 C 31.032422 18.916625 30.994141 18.755109 30.994141 18.537109 L 30.994141 11.339844 L 29.251953 11.339844 z M 25.21875 12.726562 C 25.44975 12.726562 25.637344 12.792969 25.777344 12.917969 C 25.919344 13.043969 25.990234 13.209109 25.990234 13.412109 L 25.990234 18.525391 C 25.990234 18.777391 25.92025 18.977187 25.78125 19.117188 C 25.63925 19.262187 25.454797 19.335938 25.216797 19.335938 C 24.986797 19.335938 24.8095 19.262047 24.6875 19.123047 C 24.5585 18.982047 24.496094 18.781391 24.496094 18.525391 C 24.496094 18.525391 24.496047 13.412109 24.498047 13.412109 C 24.498047 13.209109 24.564266 13.043969 24.697266 12.917969 C 24.830266 12.791969 25.00475 12.726562 25.21875 12.726562 z M 24.998047 22.925781 C 21.633047 22.921781 18.333375 22.979234 15.109375 23.115234 C 12.855375 23.115234 11.021484 24.927203 11.021484 27.158203 C 10.888484 28.923203 10.828031 30.693891 10.832031 32.462891 C 10.826031 34.229891 10.887438 35.998578 11.023438 37.767578 C 11.023438 40.002578 12.854375 41.814453 15.109375 41.814453 C 18.334375 41.948453 21.633047 42.006 24.998047 42 C 28.366047 42.007 31.663719 41.947453 34.886719 41.814453 C 37.142719 41.814453 38.976562 40.003578 38.976562 37.767578 C 39.110563 35.997578 39.173969 34.229891 39.167969 32.462891 C 39.174969 30.693891 39.112563 28.923203 38.976562 27.158203 C 38.976562 24.925203 37.143719 23.115234 34.886719 23.115234 C 31.663719 22.980234 28.366047 22.922781 24.998047 22.925781 z M 25.529297 25.822266 L 27.265625 25.822266 C 27.373625 25.822266 27.458984 25.909578 27.458984 26.017578 L 27.458984 29.5625 C 27.601984 29.4325 27.75225 29.323375 27.90625 29.234375 C 28.20025 29.071375 28.497875 28.990234 28.796875 28.990234 C 29.403875 28.990234 29.875219 29.216062 30.199219 29.664062 C 30.509219 30.094062 30.666016 30.712859 30.666016 31.505859 L 30.667969 36.634766 C 30.667969 37.336766 30.51775 37.883672 30.21875 38.263672 C 29.91175 38.660672 29.468438 38.861328 28.898438 38.861328 C 28.537437 38.861328 28.203156 38.787625 27.910156 38.640625 C 27.753156 38.559625 27.601984 38.456125 27.458984 38.328125 L 27.458984 38.550781 C 27.458984 38.658781 27.373625 38.744141 27.265625 38.744141 L 25.529297 38.744141 C 25.421297 38.744141 25.335938 38.658781 25.335938 38.550781 L 25.335938 26.017578 C 25.335938 25.909578 25.421297 25.822266 25.529297 25.822266 z M 13.029297 25.824219 L 18.970703 25.824219 C 19.078703 25.824219 19.164062 25.911531 19.164062 26.019531 L 19.164062 27.833984 C 19.164063 27.941984 19.078703 28.027344 18.970703 28.027344 L 17.160156 28.027344 L 17.160156 38.548828 C 17.160156 38.656828 17.074797 38.742187 16.966797 38.742188 L 15.03125 38.742188 C 14.92325 38.742188 14.837891 38.656828 14.837891 38.548828 L 14.837891 28.027344 L 13.029297 28.027344 C 12.921297 28.027344 12.835938 27.941984 12.835938 27.833984 L 12.835938 26.019531 C 12.835937 25.911531 12.921297 25.824219 13.029297 25.824219 z M 34.380859 28.873047 C 35.220859 28.873047 35.879891 29.129719 36.337891 29.636719 C 36.791891 30.141719 37.021484 30.863156 37.021484 31.785156 L 37.021484 34.144531 C 37.021484 34.252531 36.933172 34.338844 36.826172 34.339844 L 33.736328 34.339844 L 33.736328 35.886719 C 33.736328 36.451719 33.813 36.691922 33.875 36.794922 C 33.926 36.878922 34.020063 36.984375 34.289062 36.984375 C 34.507063 36.984375 34.653469 36.931125 34.730469 36.828125 C 34.767469 36.774125 34.863281 36.560719 34.863281 35.886719 L 34.863281 35.242188 C 34.863281 35.134187 34.948641 35.048828 35.056641 35.048828 L 36.824219 35.048828 C 36.932219 35.048828 37.019531 35.134188 37.019531 35.242188 L 37.019531 35.9375 C 37.019531 36.9335 36.782266 37.697938 36.322266 38.210938 C 35.859266 38.728938 35.160094 38.992188 34.246094 38.992188 C 33.421094 38.992187 32.760203 38.711156 32.283203 38.160156 C 31.811203 37.617156 31.572266 36.869547 31.572266 35.935547 L 31.572266 31.785156 C 31.572266 30.935156 31.835469 30.230453 32.355469 29.689453 C 32.876469 29.147453 33.557859 28.873047 34.380859 28.873047 z M 18.949219 29.109375 L 20.669922 29.109375 C 20.777922 29.109375 20.863281 29.194734 20.863281 29.302734 L 20.863281 36.388672 C 20.863281 36.621672 20.904641 36.716953 20.931641 36.751953 C 20.943641 36.766953 20.979 36.816406 21.125 36.816406 C 21.175 36.816406 21.288187 36.79525 21.492188 36.65625 C 21.658188 36.54425 21.806453 36.410953 21.939453 36.251953 L 21.939453 29.302734 C 21.939453 29.194734 22.026766 29.109375 22.134766 29.109375 L 23.853516 29.109375 C 23.961516 29.109375 24.048828 29.194734 24.048828 29.302734 L 24.048828 38.546875 L 24.050781 38.546875 L 24.050781 38.548828 C 24.050781 38.656828 23.963469 38.741187 23.855469 38.742188 L 22.136719 38.742188 C 22.028719 38.742188 21.941406 38.656828 21.941406 38.548828 L 21.941406 38.023438 C 21.712406 38.245438 21.482141 38.421641 21.244141 38.556641 C 20.870141 38.771641 20.513391 38.876953 20.150391 38.876953 C 19.690391 38.876953 19.333703 38.711766 19.095703 38.384766 C 18.870703 38.074766 18.755859 37.617297 18.755859 37.029297 L 18.755859 29.302734 C 18.755859 29.194734 18.841219 29.109375 18.949219 29.109375 z M 28.091797 30.851562 C 27.978172 30.831563 27.844625 30.850875 27.703125 30.921875 C 27.623125 30.961875 27.544891 31.022422 27.462891 31.107422 L 27.462891 36.710938 C 27.565891 36.815937 27.667719 36.893406 27.761719 36.941406 C 27.866719 36.993406 27.971891 37.019531 28.087891 37.019531 C 28.306891 37.019531 28.373531 36.932344 28.394531 36.902344 C 28.447531 36.834344 28.507812 36.693719 28.507812 36.386719 L 28.507812 31.611328 C 28.507812 31.346328 28.458281 31.142578 28.363281 31.017578 C 28.300281 30.931578 28.205422 30.871562 28.091797 30.851562 z M 34.302734 30.884766 C 34.096734 30.884766 33.955094 30.941641 33.871094 31.056641 C 33.810094 31.141641 33.736328 31.341438 33.736328 31.773438 L 33.736328 32.513672 L 34.861328 32.513672 L 34.861328 31.773438 C 34.861328 31.348437 34.781797 31.147734 34.716797 31.052734 C 34.636797 30.939734 34.500734 30.884766 34.302734 30.884766 z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>    
+    </footer>
+</body>
+</html>

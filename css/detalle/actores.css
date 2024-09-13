@@ -1,0 +1,156 @@
+.actores{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: auto;
+
+    .titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        /* padding-left: 40px; */
+
+        h3{
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: rgb(53, 53, 53);
+            font-weight: bold;
+            position: relative;
+
+            &::after{
+                content:"";
+                width: 30px;
+                height: 2px;
+                background-color: #e0041d;
+                position: absolute;
+                right: -40px;
+                bottom: 12px;
+            }
+        }
+
+        .all {
+            font-size: 15px;
+            color: #e0041d;
+            text-transform: uppercase;
+            margin-left: 735px;
+
+            &:hover{
+                cursor: pointer;
+                color:#58000b;
+                transform: 0.3s ease;
+            }
+        }
+
+        svg{
+            height: 20px;
+            width: 20px;
+            fill:#e0041d;
+            border-radius: 50%; /* Aplica border-radius correctamente */
+            border: 1px solid #e0041d; /* Para visualizar el borde */
+        }
+    }
+    
+    .container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 10px;
+    justify-items: stretch;
+    align-items: center;
+    height: 126px;
+    width: 100%;
+    /* padding-left: 40px; */
+
+        &:hover .item{
+            opacity: 70%;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .item{
+            width: 84px;
+            height: 126px;
+            background-size:cover;
+            position: relative;
+
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+                transition: 0.3s ease;
+                z-index: 10;
+            }
+
+            .actor{
+                display: flex;
+                flex-direction: column; /* Mantén esto como column */
+                position: absolute;
+                bottom: -40px; /* Ajusta según sea necesario para la posición deseada */
+                left: 0;
+                width: 100%;
+                justify-content: center; /* Centra el contenido horizontalmente */
+                text-align: center; /* Centra el texto */
+
+                .nombre,
+                .personaje{
+                    display: inline-block; /* Asegúrate de que se comporten como bloques en línea */
+                    white-space: nowrap; /* Impide que el texto se rompa en múltiples líneas */
+                    overflow: hidden; /* Oculta el contenido que desborda */
+                    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al texto desbordado */
+                }
+
+                .nombre{
+                    font-size: 13px;
+                    color: #747474;
+                    font-weight: bold;
+                }
+
+                .personaje{
+                    font-size: 13px;
+                    color: black;
+                }
+            }
+
+            &:hover .nombre{
+                overflow: visible;
+            }
+
+            &:hover .personaje{
+                color: red;
+                overflow: visible;
+                font-weight: bold;
+            }
+        }
+
+        .anakin{
+            background-image: url(/images/anakin.jpg);
+        }
+        .obi{
+            background-image: url(/images/obiwan.jpg);
+        }
+        .padme{
+            background-image: url(/images/padme.jpg);
+        }
+        .sheev{
+            background-image: url(/images/sheev.jpg);
+        }
+        .windu{
+            background-image: url(/images/windu.jpg);
+        }
+        .bail{
+            background-image: url(/images/organa.jpg);
+        }
+        .yoda{
+            background-image: url(/images/yoda.jpg);
+        }
+        .c3po{
+            background-image: url(/images/3po.jpg);
+        }
+        .dooku{
+            background-image: url(/images/dooku.jpg);
+        }
+        .clone{
+            background-image: url(/images/clone.jpg);
+        }
+    }
+}
